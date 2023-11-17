@@ -18,7 +18,7 @@ class Req01ConsultarFeriado {
 
 	@Test
 	void ct01_consulta_feriados_com_sucesso() {
-		String baseUrl = "https://api.invertexto.com/v1/holidays/2023?token=5387|E5gm8bVYumERvzYhLKCClpdNn67LQ2Tu&state=SP";
+		String baseUrl = "";
 		RestTemplate restTemplate = new RestTemplate();
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
@@ -38,7 +38,7 @@ class Req01ConsultarFeriado {
 	@Test
 	void ct02_cosulta_feriados_token_invalido() {
 	 ResponseEntity<String> response = null;
-	 String baseUrl = "https://api.invertexto.com/v1/holidays/2023?token=5387|E5gm8bVYumERvzYhLKCClpdNn67LQ2Tu&state=SP";
+	 String baseUrl = "";
 	 RestTemplate restTemplate = new RestTemplate();
 	 HttpHeaders headers = new HttpHeaders();
 	 headers.setContentType(MediaType.APPLICATION_JSON);
@@ -74,7 +74,7 @@ class Req01ConsultarFeriado {
 	@Test
 	void ct03_cosulta_feriados_com_ano_invalido() {
 	 ResponseEntity<String> response = null;
-	 String baseUrl = "https://api.invertexto.com/v1/holidays/?token=5387|E5gm8bVYumERvzYhLKCClpdNn67LQ2Tu&state=SP";
+	 String baseUrl = "";
 	 RestTemplate restTemplate = new RestTemplate();
 	 HttpHeaders headers = new HttpHeaders();
 	 headers.setContentType(MediaType.APPLICATION_JSON);
